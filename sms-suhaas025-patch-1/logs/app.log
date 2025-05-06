@@ -1,0 +1,469 @@
+2025-05-06 11:03:56 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-06 11:03:56 [main] INFO  com.example.try2.Try2Application - Starting Try2Application using Java 21.0.6 with PID 16876 (D:\Projects\try3\sms-suhaas025-patch-1\sms-suhaas025-patch-1\sm-main\try2\target\classes started by 2011012 in D:\Projects\try3\sms-suhaas025-patch-1\sms-suhaas025-patch-1)
+2025-05-06 11:03:56 [main] DEBUG com.example.try2.Try2Application - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-05-06 11:03:56 [main] INFO  com.example.try2.Try2Application - No active profile set, falling back to 1 default profile: "default"
+2025-05-06 11:04:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-06 11:04:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 321 ms. Found 13 JPA repository interfaces.
+2025-05-06 11:04:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-06 11:04:04 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-06 11:04:04 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-06 11:04:04 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-05-06 11:04:04 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-06 11:04:04 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7886 ms
+2025-05-06 11:04:04 [main] INFO  c.e.try2.config.DataSourceConfig - Initializing custom HikariCP DataSource for H2
+2025-05-06 11:04:04 [main] INFO  c.e.try2.config.DataSourceConfig - No active profiles set, using default
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class org.h2.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@76ed5528
+2025-05-06 11:04:04 [main] INFO  c.e.try2.config.DataSourceConfig - Configuring pool for file-based H2 database
+2025-05-06 11:04:04 [main] INFO  c.e.try2.config.DataSourceConfig - Database URL: jdbc:h2:file:./data/db/schooldb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+2025-05-06 11:04:04 [main] INFO  c.e.try2.config.DataSourceConfig - Connection pool configuration: minimum-idle=-1, maximum-pool-size=-1, connection-timeout=30000ms
+2025-05-06 11:04:04 [main] INFO  c.e.try2.config.DataSourceConfig - Set pool name to: defaultHikariPool
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - defaultHikariPool - configuration:
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............10000
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."org.h2.Driver"
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................30000
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:h2:file:./data/db/schooldb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - keepaliveTime...................0
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................60000
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................5
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................0
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"defaultHikariPool"
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - username........................"sa"
+2025-05-06 11:04:04 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+2025-05-06 11:04:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - defaultHikariPool - Starting...
+2025-05-06 11:04:05 [main] DEBUG com.zaxxer.hikari.pool.PoolBase - defaultHikariPool - Closing connection conn0: url=jdbc:h2:file:./data/db/schooldb user=SA: (initialization check complete and minimumIdle is zero)
+2025-05-06 11:04:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - defaultHikariPool - Start completed.
+2025-05-06 11:04:05 [defaultHikariPool connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Added connection conn1: url=jdbc:h2:file:./data/db/schooldb user=SA
+2025-05-06 11:04:05 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/db/schooldb'
+2025-05-06 11:04:05 [defaultHikariPool connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Connection not added, stats (total=1, active=0, idle=1, waiting=0)
+2025-05-06 11:04:05 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=1, active=0, idle=1, waiting=0)
+2025-05-06 11:04:05 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=1, active=0, idle=1, waiting=0)
+2025-05-06 11:04:05 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:04:06 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-06 11:04:06 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-05-06 11:04:06 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-06 11:04:07 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-06 11:04:07 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-06 11:04:10 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-06 11:04:10 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06 11:04:11 [main] DEBUG c.e.t.security.jwt.AuthTokenFilter - Filter 'authTokenFilter' configured for use
+2025-05-06 11:04:11 [main] DEBUG c.e.t.security.jwt.AuthTokenFilter - Filter 'authenticationJwtTokenFilter' configured for use
+2025-05-06 11:04:12 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-06 11:04:13 [main] DEBUG o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-05-06 11:04:13 [main] DEBUG o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [schema.sql]
+2025-05-06 11:04:13 [main] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: ALTER TABLE courses ADD COLUMN IF NOT EXISTS academic_year VARCHAR(255)
+2025-05-06 11:04:13 [main] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: UPDATE courses SET academic_year = '2023-2024' WHERE academic_year IS NULL
+2025-05-06 11:04:13 [main] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: ALTER TABLE departments ADD COLUMN IF NOT EXISTS code VARCHAR(255)
+2025-05-06 11:04:13 [main] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: ALTER TABLE departments ADD COLUMN IF NOT EXISTS description VARCHAR(1024)
+2025-05-06 11:04:13 [main] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: UPDATE departments SET code = CONCAT('DEPT_', id) WHERE code IS NULL
+2025-05-06 11:04:13 [main] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: ALTER TABLE departments ALTER COLUMN code SET NOT NULL
+2025-05-06 11:04:13 [main] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: ALTER TABLE departments ADD CONSTRAINT IF NOT EXISTS UK_l7tivi5261wxdnvo6cct9gg6t UNIQUE (code)
+2025-05-06 11:04:13 [main] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: ALTER TABLE users ADD COLUMN IF NOT EXISTS last_login_date TIMESTAMP
+2025-05-06 11:04:13 [main] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: ALTER TABLE users ADD COLUMN IF NOT EXISTS account_expiration_date TIMESTAMP
+2025-05-06 11:04:13 [main] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: ALTER TABLE users ADD COLUMN IF NOT EXISTS account_blocked BOOLEAN DEFAULT FALSE
+2025-05-06 11:04:13 [main] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: ALTER TABLE users ADD COLUMN IF NOT EXISTS account_status VARCHAR(50) DEFAULT 'ACTIVE'
+2025-05-06 11:04:13 [main] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: UPDATE users SET account_expiration_date = DATEADD('DAY', 30, CURRENT_TIMESTAMP()) WHERE account_expiration_date IS NULL
+2025-05-06 11:04:13 [main] DEBUG o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [schema.sql] in 25 ms.
+2025-05-06 11:04:13 [main] INFO  c.e.t.c.ConnectionPoolDemoController - Connection pool demo initialized with maximum pool size: 5
+2025-05-06 11:04:13 [main] INFO  c.e.t.c.ConnectionPoolDemoController - HikariCP configuration: minimum-idle=0, connection-timeout=10000ms, idle-timeout=30000ms, max-lifetime=60000ms
+2025-05-06 11:04:14 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-06 11:04:16 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2025-05-06 11:04:16 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b3cb4b1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39783d83, org.springframework.security.web.context.SecurityContextHolderFilter@2959dfb7, org.springframework.security.web.header.HeaderWriterFilter@68abd5e2, org.springframework.web.filter.CorsFilter@51f7265b, org.springframework.security.web.authentication.logout.LogoutFilter@75c3957d, com.example.try2.security.jwt.AuthTokenFilter@2e903c69, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b728f15, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@260dca40, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28d1e59d, org.springframework.security.web.session.SessionManagementFilter@1b506c3b, org.springframework.security.web.access.ExceptionTranslationFilter@6212695e, org.springframework.security.web.access.intercept.AuthorizationFilter@56b6e072]
+2025-05-06 11:04:17 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-06 11:04:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-05-06 11:04:18 [main] INFO  com.example.try2.Try2Application - Started Try2Application in 23.496 seconds (process running for 27.427)
+2025-05-06 11:04:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - Database connection pool metrics: {total_connections=1, threads_awaiting_connection=0, idle_connections=1, max_pool_size=5, active_connections=0, pool_name=defaultHikariPool, min_idle=0}
+2025-05-06 11:04:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - JVM memory metrics: {heap.committed=128 MB, non-heap.used=108 MB, heap.used=70 MB, heap.max=3,958 MB, heap.usage=1.78%, non-heap.committed=110 MB}
+2025-05-06 11:04:18 [main] INFO  c.e.try2.config.DataInitializer - Initializing default roles and users...
+2025-05-06 11:04:18 [main] INFO  c.e.try2.config.DataInitializer - Admin user already exists
+2025-05-06 11:04:18 [main] INFO  c.e.try2.config.DataInitializer - Moderator user already exists
+2025-05-06 11:04:18 [main] INFO  c.e.try2.service.AnnouncementService - Announcement migration complete. Records updated: 0
+2025-05-06 11:04:18 [main] INFO  c.example.try2.service.CourseService - Course migration complete. Records updated: 0
+2025-05-06 11:04:18 [main] INFO  c.e.try2.service.EnrollmentService - Enrollment migration complete. Records updated: 0
+2025-05-06 11:04:18 [main] INFO  c.example.try2.service.GradeService - Grade migration complete. Records updated: 0
+2025-05-06 11:04:18 [main] INFO  c.example.try2.service.UserService - User migration complete. Records updated: 0
+2025-05-06 11:04:18 [main] INFO  c.example.try2.service.UserService - No blank emails found to fix.
+2025-05-06 11:04:35 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=1, active=0, idle=1, waiting=0)
+2025-05-06 11:04:35 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=1, active=0, idle=1, waiting=0)
+2025-05-06 11:04:35 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:05:04 [defaultHikariPool connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - defaultHikariPool - Closing connection conn1: url=jdbc:h2:file:./data/db/schooldb user=SA: (connection has passed maxLifetime)
+2025-05-06 11:05:05 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:05:05 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:05:05 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:05:35 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:05:35 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:05:35 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:06:05 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:06:05 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:06:05 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:06:35 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:06:35 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:06:35 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:07:05 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:07:05 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:07:05 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:07:35 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:07:35 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:07:35 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:08:05 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:08:05 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:08:05 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:08:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:08:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:08:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:09:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:09:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:09:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:09:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - Database connection pool metrics: {total_connections=0, threads_awaiting_connection=0, idle_connections=0, max_pool_size=5, active_connections=0, pool_name=defaultHikariPool, min_idle=0}
+2025-05-06 11:09:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - JVM memory metrics: {heap.committed=128 MB, non-heap.used=111 MB, heap.used=94 MB, heap.max=3,958 MB, heap.usage=2.39%, non-heap.committed=114 MB}
+2025-05-06 11:09:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:09:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:09:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:10:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:10:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:10:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:10:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:10:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:10:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:11:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:11:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:11:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:11:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:11:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:11:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:12:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:12:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:12:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:12:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:12:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:12:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:13:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:13:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:13:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:13:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:13:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:13:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:14:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:14:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:14:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:14:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - Database connection pool metrics: {total_connections=0, threads_awaiting_connection=0, idle_connections=0, max_pool_size=5, active_connections=0, pool_name=defaultHikariPool, min_idle=0}
+2025-05-06 11:14:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - JVM memory metrics: {heap.committed=128 MB, non-heap.used=111 MB, heap.used=102 MB, heap.max=3,958 MB, heap.usage=2.59%, non-heap.committed=115 MB}
+2025-05-06 11:14:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:14:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:14:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:15:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:15:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:15:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:15:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:15:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:15:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:16:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:16:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:16:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:16:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:16:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:16:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:17:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:17:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:17:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:17:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:17:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:17:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:18:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:18:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:18:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:18:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:18:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:18:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:19:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:19:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:19:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:19:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - Database connection pool metrics: {total_connections=0, threads_awaiting_connection=0, idle_connections=0, max_pool_size=5, active_connections=0, pool_name=defaultHikariPool, min_idle=0}
+2025-05-06 11:19:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - JVM memory metrics: {heap.committed=128 MB, non-heap.used=111 MB, heap.used=56 MB, heap.max=3,958 MB, heap.usage=1.42%, non-heap.committed=115 MB}
+2025-05-06 11:19:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:19:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:19:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:20:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:20:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:20:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:20:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:20:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:20:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:21:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:21:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:21:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:21:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:21:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:21:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:22:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:22:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:22:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:22:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:22:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:22:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:23:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:23:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:23:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:23:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:23:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:23:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:24:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:24:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:24:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:24:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - Database connection pool metrics: {total_connections=0, threads_awaiting_connection=0, idle_connections=0, max_pool_size=5, active_connections=0, pool_name=defaultHikariPool, min_idle=0}
+2025-05-06 11:24:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - JVM memory metrics: {heap.committed=128 MB, non-heap.used=111 MB, heap.used=64 MB, heap.max=3,958 MB, heap.usage=1.63%, non-heap.committed=115 MB}
+2025-05-06 11:24:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:24:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:24:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:25:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:25:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:25:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:25:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:25:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:25:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:26:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:26:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:26:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:26:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:26:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:26:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:27:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:27:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:27:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:27:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:27:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:27:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:28:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:28:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:28:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:28:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:28:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:28:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:29:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:29:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:29:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:29:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - Database connection pool metrics: {total_connections=0, threads_awaiting_connection=0, idle_connections=0, max_pool_size=5, active_connections=0, pool_name=defaultHikariPool, min_idle=0}
+2025-05-06 11:29:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - JVM memory metrics: {heap.committed=128 MB, non-heap.used=111 MB, heap.used=72 MB, heap.max=3,958 MB, heap.usage=1.83%, non-heap.committed=115 MB}
+2025-05-06 11:29:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:29:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:29:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:30:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:30:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:30:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:30:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:30:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:30:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:31:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:31:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:31:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:31:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:31:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:31:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:32:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:32:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:32:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:32:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:32:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:32:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:33:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:33:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:33:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:33:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:33:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:33:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:34:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:34:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:34:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:34:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - Database connection pool metrics: {total_connections=0, threads_awaiting_connection=0, idle_connections=0, max_pool_size=5, active_connections=0, pool_name=defaultHikariPool, min_idle=0}
+2025-05-06 11:34:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - JVM memory metrics: {heap.committed=128 MB, non-heap.used=111 MB, heap.used=80 MB, heap.max=3,958 MB, heap.usage=2.03%, non-heap.committed=115 MB}
+2025-05-06 11:34:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:34:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:34:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:35:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:35:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:35:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:35:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:35:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:35:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:36:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:36:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:36:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:36:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:36:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:36:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:37:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:37:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:37:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:37:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:37:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:37:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:38:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:38:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:38:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:38:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:38:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:38:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:39:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:39:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:39:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:39:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - Database connection pool metrics: {total_connections=0, threads_awaiting_connection=0, idle_connections=0, max_pool_size=5, active_connections=0, pool_name=defaultHikariPool, min_idle=0}
+2025-05-06 11:39:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - JVM memory metrics: {heap.committed=128 MB, non-heap.used=111 MB, heap.used=88 MB, heap.max=3,958 MB, heap.usage=2.23%, non-heap.committed=115 MB}
+2025-05-06 11:39:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:39:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:39:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:40:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:40:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:40:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:40:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:40:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:40:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:41:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:41:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:41:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:41:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:41:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:41:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:42:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:42:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:42:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:42:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:42:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:42:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:43:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:43:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:43:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:43:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:43:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:43:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:44:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:44:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:44:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:44:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - Database connection pool metrics: {total_connections=0, threads_awaiting_connection=0, idle_connections=0, max_pool_size=5, active_connections=0, pool_name=defaultHikariPool, min_idle=0}
+2025-05-06 11:44:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - JVM memory metrics: {heap.committed=128 MB, non-heap.used=111 MB, heap.used=96 MB, heap.max=3,958 MB, heap.usage=2.43%, non-heap.committed=115 MB}
+2025-05-06 11:44:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:44:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:44:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:45:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:45:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:45:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:45:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:45:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:45:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:46:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:46:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:46:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:46:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:46:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:46:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:47:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:47:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:47:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:47:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:47:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:47:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:48:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:48:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:48:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:48:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:48:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:48:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:49:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:49:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:49:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:49:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - Database connection pool metrics: {total_connections=0, threads_awaiting_connection=0, idle_connections=0, max_pool_size=5, active_connections=0, pool_name=defaultHikariPool, min_idle=0}
+2025-05-06 11:49:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - JVM memory metrics: {heap.committed=128 MB, non-heap.used=111 MB, heap.used=104 MB, heap.max=3,958 MB, heap.usage=2.64%, non-heap.committed=115 MB}
+2025-05-06 11:49:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:49:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:49:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:50:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:50:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:50:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:50:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:50:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:50:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:51:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:51:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:51:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:51:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:51:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:51:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:52:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:52:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:52:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:52:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:52:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:52:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:53:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:53:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:53:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:53:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:53:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:53:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:54:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:54:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:54:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:54:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - Database connection pool metrics: {total_connections=0, threads_awaiting_connection=0, idle_connections=0, max_pool_size=5, active_connections=0, pool_name=defaultHikariPool, min_idle=0}
+2025-05-06 11:54:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - JVM memory metrics: {heap.committed=128 MB, non-heap.used=111 MB, heap.used=110 MB, heap.max=3,958 MB, heap.usage=2.79%, non-heap.committed=115 MB}
+2025-05-06 11:54:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:54:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:54:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:55:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:55:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:55:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:55:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:55:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:55:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:56:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:56:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:56:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:56:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:56:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:56:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:57:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:57:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:57:06 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:57:36 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:57:37 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:57:37 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:58:07 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:58:07 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:58:07 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:58:37 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:58:37 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:58:37 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:59:07 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:59:07 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:59:07 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 11:59:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - Database connection pool metrics: {total_connections=0, threads_awaiting_connection=0, idle_connections=0, max_pool_size=5, active_connections=0, pool_name=defaultHikariPool, min_idle=0}
+2025-05-06 11:59:18 [scheduling-1] INFO  c.e.t.config.ConnectionPoolMonitor - JVM memory metrics: {heap.committed=128 MB, non-heap.used=111 MB, heap.used=61 MB, heap.max=3,958 MB, heap.usage=1.56%, non-heap.committed=115 MB}
+2025-05-06 11:59:37 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before cleanup stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:59:37 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After cleanup  stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 11:59:37 [defaultHikariPool housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-06 12:00:03 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06 12:00:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - defaultHikariPool - Shutdown initiated...
+2025-05-06 12:00:03 [SpringApplicationShutdownHook] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - Before shutdown stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 12:00:03 [SpringApplicationShutdownHook] DEBUG com.zaxxer.hikari.pool.HikariPool - defaultHikariPool - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2025-05-06 12:00:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - defaultHikariPool - Shutdown completed.

@@ -1,0 +1,40 @@
+{
+  "name": "student-management-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^5.17.1",
+    "@mui/material": "^5.15.6",
+    "@mui/styled-engine": "^7.0.2",
+    "@mui/x-data-grid": "^8.1.0",
+    "@mui/x-date-pickers": "^7.28.3",
+    "axios": "^1.6.7",
+    "date-fns": "^4.1.0",
+    "dayjs": "^1.11.13",
+    "jspdf": "^3.0.1",
+    "jspdf-autotable": "^5.0.2",
+    "otpauth": "^9.4.0",
+    "qrcode.react": "^4.2.0",
+    "react": "^18.2.0",
+    "react-avatar-editor": "^13.0.2",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-dom": "^18.2.0",
+    "react-image-crop": "^11.0.7",
+    "react-router-dom": "^6.21.3",
+    "recharts": "^2.15.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.8"
+  }
+}
